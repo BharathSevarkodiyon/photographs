@@ -1,0 +1,54 @@
+.mosaic{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 20px;
+    /* border: 2px solid; */
+}
+.mosaic .title{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.mosaic .title h1{
+    text-align: center;
+    font-family: outfit;
+    margin-bottom: 20px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mosaic .title p {
+    margin: 0 150px;
+    text-align: center;
+    font-family: outfit;
+}
+
+.mosaic .images{
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+    width: 100%;
+    margin: auto;
+    /* padding: 0px 80px; */
+    /* border: 2px solid pink;; */
+}
+.mosaic .images .left{
+    height: 100%;
+    width: 45%;
+}
+.mosaic .images .right {
+    height: 100%;
+    width: 45%;
+}
+.mosaic .images .left img{
+    /* border: 2px solid orange; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.mosaic .images .right img{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid green; */
+    object-fit: cover;
+}

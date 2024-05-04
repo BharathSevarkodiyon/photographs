@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.photographs{
+    display: flex;
+    flex-direction: column;
+}
+.photographs .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+.photographs .title h1{
+    display: flex;
+    justify-content: center;
+    color: lightslategray;
+    width: 40%;
+    font-family: outfit;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.photographs .title p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 55%;
+    font-weight: 500;
+    font-family: outfit;
+}
+.list-images{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px 160px;
+    margin-bottom: 60px;
+}
+.list-images .list-image{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.list-images .list-image:hover img {
+    position: absolute;
+    opacity: 40%;
+    background-color: lightgray;
+}
+.list-images .list-image:hover p {
+    color: black;
+}
+.list-images .list-image img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.list-images .list-image p{
+    position: absolute;
+    bottom: 8px;    
+    color: white;
+    cursor: context-menu;
+}

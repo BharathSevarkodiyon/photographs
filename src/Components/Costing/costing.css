@@ -1,0 +1,156 @@
+.costing{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+}
+.costing .heading{
+    text-align: center;
+}
+.costing .heading h1{
+    font-family: outfit;
+    padding: 5px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.costing .heading p{
+    padding: 18px;
+    font-size: 18px;
+    font-family: outfit;
+}
+.center{
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    transform: translate(-15% -25%);
+}
+.popup{
+    height: 500px;
+    width: 40%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    top: -18%;
+    transform: translate(-15% -25%) scale(0.5);
+}
+.active{
+    opacity: 1;
+    top: 18%;
+    transform: translate(-15% -25%) scale(1); 
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+.popup .logo{
+    width: 250px;
+    height: 250px;
+    border: 15px solid #F5F5F5;
+    border-radius: 50%;
+    background-position: center;
+    object-fit: cover;
+    background-image: url(../../asserts/estimateImg.jpg);
+}
+.popup .title{
+    font-size: outfit;
+    margin: 10px 0px;
+}
+.popup .description{
+    color: #222;
+    width: 300px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.popup .dismiss-btn #dismiss{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: #111;
+    color: #f5f5f5;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+.popup .dismiss-btn #dismiss:hover{
+    color: #111;
+    background: #f5f5f5;
+}
+
+
+.costing .pricing-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-image: url(../../asserts/895971.png);
+    background-position: 50% 27%;
+    object-fit: cover;
+}
+.costing .pricing-container .work{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+.costing .pricing-container .photo {
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+label{
+    font-family: outfit;
+    font-size: 18px;
+    color: #EEFBFD;
+}
+.data{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+    background: lightblue;
+    text-align: center;
+    border-radius: 50px;
+}
+span{
+    color: red;
+    font-size: 12px;
+    font-family: outfit;
+}
+.submitClass{
+    text-align: center;
+    padding: 12px;
+    margin: 25px 0 10px;
+}
+.submitClass #sub{
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #222;
+    margin: 20px 50px;
+}
+.submitClass #sub:hover {
+    color: #222;
+    background-color: white;
+}

@@ -1,0 +1,22 @@
+/* .home{
+    position: absolute;
+    top: 0;
+    z-index:-1;
+    height: 100vh;
+    width: 100%;
+    border: 2px solid violet;
+} */
+/* .home .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+    height: inherit;
+    width: inherit;
+} */
+
+/* .home .slide img{
+    border: 2px solid yellow;
+    height: inherit;
+    width: inherit;
+} */

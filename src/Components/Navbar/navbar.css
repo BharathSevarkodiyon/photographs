@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    position: relative;
+}
+.nav .nav-lists{
+    margin: 5px 50px;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav .nav-lists .nav-list{
+    font-size: 18px;
+    font-family: outfit;
+    color: darkslategrey;
+}
+.nav .nav-lists .nav-list:hover{
+    border-bottom: 2px solid skyblue;
+    cursor: pointer;
+}
+.nav .nav-lists .logo{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+}
+.anchor-link{
+    text-decoration: none;
+    color: darkslategrey;
+}
+.anchor-link:hover {
+    border-top: 2px solid skyblue;
+    cursor: pointer;
+}
